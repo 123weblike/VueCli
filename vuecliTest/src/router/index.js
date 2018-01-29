@@ -8,6 +8,7 @@ import hh1 from '@/components/hh1'
 import hh2 from '@/components/hh2'
 import Params from '@/components/Params'
 import Error from '@/components/Error'
+import Count from '@/components/Count'
 
 Vue.use(Router)
 
@@ -68,6 +69,9 @@ export default new Router({
     },{
       path:'*',
       component:Error
+    },{
+      path:'/count',
+      component:Count
     }
   ]
 })
